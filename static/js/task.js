@@ -58,12 +58,6 @@ var StroopExperiment = function() {
 			["Criterion: Words that begin with the letter F", "blue", "letter", "1F"],
 			["Criterion: Names of any living or non-living things (Nouns)", "red", "animal", "2A"],
 			["Criterion: Actions that involve your body movement (Verbs)", "blue", "verb", "3V"],
-			/*["RED", "red", "congruent", "4"],
-			["GREEN", "green", "congruent", "5"],
-			["BLUE", "blue", "congruent", "6"],
-			["GREEN", "red", "incongruent", "7"],
-			["BLUE", "green", "incongruent", "8"],
-			["RED", "blue", "incongruent", "9"]*/
 		];
     }
     else{
@@ -71,18 +65,9 @@ var StroopExperiment = function() {
 			["Criterion: Words that begin with the letter F", "blue", "letter", "1F"],
 			["Criterion: Actions that involve your body movement (Verbs)", "red", "verb", "2V"],
 			["Criterion: Names of any living or non-living things (Nouns)", "blue", "animal", "3A"],
-			/*["RED", "red", "congruent", "4"],
-			["GREEN", "green", "congruent", "5"],
-			["BLUE", "blue", "congruent", "6"],
-			["GREEN", "red", "incongruent", "7"],
-			["BLUE", "green", "incongruent", "8"],
-			["RED", "blue", "incongruent", "9"]*/
 		];
         
     }
-	// Stimuli for a basic Stroop experiment
-	
-	//stims = _.shuffle(stims);
 
 	var next = function() {
 		if (stims.length===0) {
