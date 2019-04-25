@@ -1,0 +1,81 @@
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+</script>
+
+
+<div id="container-instructions">
+
+	<h1>Important!</h1>
+
+	<hr>
+
+	<div class="instructions well">
+
+	    <p>
+		    <strong>This experiment requires AUDIO RECORDING using your microphone. Please perform the following test before proceeding.</strong>
+	    </p>
+
+        
+
+        <hr>
+
+        <p>
+            Please make sure you can record audio from your microphone. To do so, click the "Record" button and speak into your microphone. Then click "Stop" when you are finished. An audio file of your recording will then appear. Please play this file to make sure your voice was recorded properly. You may record yourself as many times as you would like. <strong>However, during the task itself, you may only make one recording per task.</strong>
+        </p>
+
+        <br>
+          <div>
+		<h2>Audio record and playback</h2>
+		<p>
+			<button id=startRecord class="btn btn-warning btn-lg" onclick="bstart()">Record</button>
+			<button id=stopRecord class="btn btn-warning btn-lg" onClick="bstop()" disabled>Stop</button>
+		</p>	
+		<p>
+			<audio id=recordedAudio></audio>
+		</p>
+
+
+          <br>
+          
+
+        <hr>
+
+        <p>
+            <strong>Only proceed with the experiment if you were able to perform the above task. Otherwise, please exit the experiment window now.</strong>
+        </p>
+
+        <hr>
+
+        <p>
+            Click "Next" below to continue.
+        </p>
+
+	    <script type="text/javascript">
+	    //console.log(psiTurk.getInstructionIndicator())
+	    </script>
+
+
+	</div>
+	
+	<script type="text/javascript" src="/static/js/script_test.js"></script>
+
+	<hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled>
+                Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

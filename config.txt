@@ -1,0 +1,36 @@
+[HIT Configuration]
+title = Verbal fluency task
+description = Produce words according to a specified criterion. You may ONLY complete this HIT using a Firefox web browser, and you will be asked to enable microphone.
+amt_keywords = Memory, Language, Psychology
+lifetime = 24
+us_only = true
+approve_requirement = 90
+contact_email_on_error = ublanmemlab@gmail.com
+ad_group = Verbal Fluency
+psiturk_keywords = verbal fluency
+organization_name = University at Buffalo
+browser_exclude_rule = MSIE, mobile, tablet
+
+[Database Parameters]
+database_url = sqlite:///participants.db
+table_name = VF
+
+[Server Parameters]
+host = 0.0.0.0
+port = 22362
+cutoff_time = 30
+logfile = server.log
+loglevel = 0
+debug = true
+login_username = examplename
+login_pw = examplepassword
+threads = auto
+upload_folder = uploads
+
+[Task Parameters]
+experiment_code_version = 1.0
+num_conds = 1
+num_counters = 1
+
+[Shell Parameters]
+launch_in_sandbox_mode = true

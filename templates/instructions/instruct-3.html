@@ -1,0 +1,56 @@
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+</script>
+
+<div id="container-instructions">
+
+    <h1>Experiment Instruction:</h1>
+
+    <hr>
+
+    <div class="instructions well">
+
+        <p>
+            <strong><font size="5">In a verbal fluency task, you will be asked to say as many words as you can think of that conform to a specified criterion within 1 minute. <br>There will be <font color="blue">three </font>tasks, each with a different criterion.</font></strong>
+        </p>
+        <br>
+        <br>
+        <p align="center"><strong><font size="6" color="red">Important!</font></strong></p>
+        <p>A. Please <Strong>DO NOT</Strong> say words that are proper nouns (like Bob or Boston), numbers, or the same words with different endings (for example, love --> loves, lover, loving).</p>
+        <p>B. Please <strong>DO NOT</strong> say phrases or sentences.</p>
+        <p>C. Please <strong>DO NOT</strong> use dictionary, internet, or other external help to organize your response. If we find you read from a list or webpage, you will not get paid.</p>
+        <p>D. Please make sure the background noise is not distracting. If the noise is too loud, it may interfere your performance as well as our analysis. </p>
+        <p>E. Depending on your internet speed, the second and third criterion may take several seconds to appear on screen. Please <strong>DO NOT</strong> start until after you see the updated criterion.</p>
+
+        <br>
+        <br>
+    <p>
+        Click "Next" to continue.
+    </p>
+
+    <script type="text/javascript">
+    //console.log(psiTurk.getInstructionIndicator())
+    </script>
+
+	</div>
+
+	<hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

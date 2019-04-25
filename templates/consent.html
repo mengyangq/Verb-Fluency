@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- 
+  The consent.html displays the text of your IRB-approved
+  consent form.  Even if you are not required to provide
+  a consent form, it is helpful to use this form to 
+  describe what people can do if an error comes up, etc...
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Psychology Experiment - Informed Consent Form</title>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+        <script type="text/javascript">
+            function onexit() {
+              self.close(); // no harm, no foul here
+            }
+        </script>
+        <script language="javascript">
+            var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+		    var is_explorer = (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0);
+		    var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+		    var is_safari = (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1);
+		    var is_opera = navigator.userAgent.toLowerCase().indexOf('op') > -1;
+
+		    if (is_explorer || is_safari || is_opera || is_chrome){
+		    	alert("Your web browser is NOT supported. You may switch to Firefox, or return the HIT for another Worker to complete. If you proceed with the current browser, you may just see a blank page after the consent page.");
+		    	console.log("explorer: " + is_explorer);
+		    	console.log("chrome: " + is_chrome);
+		    	console.log("safari: " + is_safari);
+		    	console.log("opera: " + is_opera);
+		    } else{
+			    console.log("browser accepted");
+			}
+
+        	/* if (navigator.userAgent.indexOf('MSIE') != -1)
+				var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
+			else // if no "MSIE" string in userAgent
+				var detectIEregexp = /Trident.*rv[ :]*(\d+\.\d+)/ //test for rv:x.x or rv x.x where Trident string exists
+
+			var uagent = navigator.userAgent.toLowerCase();
+
+
+			if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)){ //test for Firefox/x.x or Firefox x.x (ignoring remaining digits);
+				alert("Your web browser (Mozilla Firefox) is not supported. Please return the HIT for another Worker to complete.");
+			} else if (detectIEregexp.test(navigator.userAgent)){ //if some form of IE{ 
+			    alert("Your web browser (Microsoft Internet Explorer) is not supported. Please return the HIT for another Worker to complete.");
+			} else if(/safari/.test(uagent) && !/chrome/.test(uagent)){
+				alert("Your web browser (Safari) is not supported. Please return the HIT for another Worker to complete.");
+			} else{
+			    console.log("browser accepted");
+			} 
+            
+            
+            <h1><font color ="red">Important: If you are using Firefox and get a blank page after this consent page, it means there are problems accessing your audiosource. If so, please return the HIT for another Worker to complete. We are very sorry.</font></h1>*/
+		</script>
+    </head>
+    <body>
+        <div id="container-consent">
+            <div id="consent">
+               
+                <h2>We need your consent to proceed</h2>
+                <hr />
+                <p>
+                    Thank you for accepting the HIT. You have been invited to take part in a research study named <strong>Verbal Fluency</strong>.
+                    </p>
+                <p>
+                    Please read this consent agreement carefully before deciding whether to participate in this study.
+                    </p>
+                <br>
+                <div class="legal well">
+                    <h3>Consent Form</h3>
+
+                    <hr>
+
+                    <p><strong>Purpose of the research:</strong></p>
+
+                    <p>The purpose of this study is to investigate how you search your memory when you are asked to produce words according to a specified criterion. We would like to see how memory search patterns are similar or different across different categories (e.g., nouns vs. verbs) and across different ages. The results will help us better understand how different words are stored and accessed in our mind, and serve as a basis for exploring memory search deficits of words in people with mild cognitive impairment, early Alzheimer's disease, or other neurodegenerative disorders in future studies.  </p>
+
+                    <p><strong>Eligibility:</strong></p>
+
+                    <p>A. <font color="red">Please ONLY participate ONCE.</font> DO NOT participate in this HIT if you have previously done it. If you have already participated, your work will be rejected (affecting your worker rating) and you WILL NOT be paid. (You can find out if you've participated previously by checking your account settings or qualifications.)</p>
+
+                    <p>B. <font color="red">Please ONLY participate in this study if you are a native speaker of <strong>American English</strong>.</font> If American English is not your first language, you cannot participate. If you have a non-American accent we will NOT be able to pay you. For example, British or Indian English is NOT permissible for this experiment.</p>
+
+                    <p>C. Please ONLY participate in this study if you are 18 years of age or older.</p>
+
+                    <p><strong>What you will do in this research:</strong></p>
+
+                    <p>You will do three verbal fluency tasks. Each will be one minute long. In each task, you will be ask to produce as many words as possible that conform to a specified criterion. Please follow the instructions, and RECORD your response with your microphone.</p>
+
+                    <p>The study should take no more than 10 minutes.</p>
+
+                    <p><strong>Risks and benefits:</strong></p>
+
+                    <p>There are no known risks associated with your participation in this research beyond those of everyday life. Although you will receive no direct benefits, this research may help the investigator understand how people organise and access words in their mind.</p>
+
+                    <p><strong>Compensation:</strong></p>
+
+                    <p>You will be paid $1.00 to participate in the study.</p>
+
+                    <p><strong>Confidentiality:</strong></p>
+
+                    <p>The data you provide will be anonymous. That is, it is recorded such that not even the person collecting and storing it would ever be able to associate your data with your identity.</p>
+
+                    <p><strong>Participation and withdrawal:</strong></p>
+
+                    <p>Your participation in this study is completely voluntary, and you may withdraw at any time without penalty or loss of benefit to which you may otherwise be entitled.</p>
+
+                    <p><strong>Contact:</strong></p>
+
+                    <p>If there is anything about the study or your participation that is unclear or that you do not understand, or if you have other questions or wish to report a research-related problem, you may contact Mengyang Qiu at:</p>
+
+                        <ul>
+                        mengyang@buffalo.edu
+                        </ul>
+
+                    <p>You can also contact our lab at:</p>
+                    
+                    <ul>
+                        ublanmemlab@gmail.com
+                    </ul>
+
+                        <ul>
+                        122 Cary Hall
+                        <br>
+                        University at Buffalo
+                        <br>
+                        Buffalo, NY 14214
+                        <br>
+                        (716) 829-2797
+                        </ul>
+
+                    <p>The faculty member supervising this work is Brendan Johns, Ph.D. (btjohns@buffalo.edu).</p>
+
+                    <p>This research has been reviewed and approved by an Institutional Review Board (“IRB”). You may talk to them at (716) 888-4888 or email ub-irb@buffalo.edu if:</p>
+
+                        <ul>
+                        You have questions about your rights as a participant in this research
+                        <br>
+                        Your questions, concerns, or complaints are not being answered by the research team
+                        <br>
+                        You cannot reach the research team
+                        <br>
+                        You want to talk to someone besides the research team
+                        <br>
+                        You want to get information or provide input about this research
+                        </ul>
+
+                    <hr>
+
+                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                    <span class="glyphicon glyphicon-print"></span> Please save or print a copy of this page for your records
+                    </button>
+                </div>
+
+                <hr />
+                <h4>Do you understand and consent to these terms?</h4>
+                <br />
+
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                    <span class="glyphicon glyphicon-ok"></span> I agree 
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                    <span class="glyphicon glyphicon-ban-circle"></span> No, thanks—I do not want to do this HIT
+                    </button>
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,108 @@
+<script>
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
+</script>
+
+<script>
+  var age="na";
+function update_age() {
+ 	age=document.getElementById('age_val').value;
+}
+</script>
+
+<script>
+var edu="na";
+function update_edu() {
+	var radios=document.getElementsByName('edu_buttons');
+	for (var i=0, length=radios.length; i<length; i++) {
+	    if (radios[i].checked) {
+	        edu=radios[i].value;
+			break;  
+	    }
+	}
+}
+
+</script>
+<script>
+var x=document.getElementById("next");
+var y=document.getElementById("submit");    
+function enablenext () {
+    x.disabled = false ;
+    y.disabled = true ;
+}
+</script>
+
+
+<div id="container-instructions">
+
+	<h1>Demographics</h1>
+
+    <hr>
+
+	<div class="instructions well">
+
+    <p>
+      Please provide your age and education level (If you’re currently enrolled in school, please indicate the highest degree you have received).
+    </p>
+
+    <hr>
+
+    <form name="age">
+      <b>Age:</b>
+      <input type="text" id="age_val">
+    </form>
+
+    <br>
+
+    <form name="edu">
+      <b>Education Level:</b>
+      <br>
+      <input type="radio" name="edu_buttons" value="LessHigh"> Less than a high school diploma
+      <br>
+      <input type="radio" name="edu_buttons" value="High"> High school degree or equivalent (e.g. GED)
+      <br>
+      <input type="radio" name="edu_buttons" value="Coll"> Some college, no degree
+      <br>
+      <input type="radio" name="edu_buttons" value="Asso"> Associate degree (e.g. AA, AS)
+      <br>
+      <input type="radio" name="edu_buttons" value="Bach"> Bachelor’s degree (e.g. BA, BS)
+      <br>
+      <input type="radio" name="edu_buttons" value="Mast"> Master’s degree (e.g. MA, MS, MEd)
+      <br>
+      <input type="radio" name="edu_buttons" value="Prof"> Professional degree (e.g. MD, DDS, DVM)
+      <br>
+      <input type="radio" name="edu_buttons" value="Doct"> Doctorate (e.g. PhD, EdD)
+    </form>
+    
+     <button id="submit" class="btn btn-warning btn-lg" onclick="javascript:enablenext()">Submit</button>
+    <hr>
+
+    <p>
+        Click "Next" to continue.
+    </p>
+
+    <script type="text/javascript">
+    //console.log(psiTurk.getInstructionIndicator())
+    </script>
+
+	</div>
+
+	<hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue"  onclick="javascript:update_age();javascript:update_edu();" disabled>
+                Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
