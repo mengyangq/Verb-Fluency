@@ -24,8 +24,8 @@
 		    var is_safari = (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1);
 		    var is_opera = navigator.userAgent.toLowerCase().indexOf('op') > -1;
 
-		    if (is_explorer || is_safari || is_opera || is_chrome){
-		    	alert("Your web browser is NOT supported. You may switch to Firefox, or return the HIT for another Worker to complete. If you proceed with the current browser, you may just see a blank page after the consent page.");
+		    if (is_explorer || is_safari || is_opera){
+		    	alert("Your web browser is NOT supported. You may switch to Chrome or Firefox, or return the HIT for another Worker to complete. If you proceed with the current browser, you may just see a blank page after the consent page.");
 		    	console.log("explorer: " + is_explorer);
 		    	console.log("chrome: " + is_chrome);
 		    	console.log("safari: " + is_safari);
